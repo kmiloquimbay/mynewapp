@@ -10,3 +10,7 @@ td {
 .nombre-column {
     font-weight: bold;
 }
+
+#avg-seasons {
+    color: #F0F0F0;
+}

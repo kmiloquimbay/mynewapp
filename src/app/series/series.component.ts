@@ -16,8 +16,21 @@ export class SeriesComponent implements OnInit {
     return dataSeries;
   }
 
+  addAvgSeasons() {
+    let totalTemporadas = 0;
+    this.series.forEach(serie => {
+      totalTemporadas += serie.temporadas;
+    });
+    const avgSeasons = totalTemporadas / this.series.length;
+    let pElement = document.getElementById('avg-seasons');
+    if (pElement) {
+      pElement.innerHTML = 'Promedio de temporadas: ' + avgSeasons;
+    }
+  }
+
   ngOnInit() {
     this.series = this.getSeriesList();
+    this.addAvgSeasons();
   }
 
 }
