@@ -1,0 +1,12 @@
+th {
+    background-color: #48CFCB;
+    color: #F0F0F0;
+}
+
+td {
+    background-color: #F0F0F0;
+}
+
+.nombre-column {
+    font-weight: bold;
+}
